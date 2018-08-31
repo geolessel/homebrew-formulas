@@ -6,6 +6,8 @@ class TrelloCli < Formula
   depends_on "crystal" => :build
   depends_on "ncurses"
 
+  head "https://github.com/geolessel/trello-cli.git"
+
   def install
     system "make"
     bin.install "bin/trello"
