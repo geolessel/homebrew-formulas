@@ -10,7 +10,7 @@ class TrelloCli < Formula
   head 'https://github.com/geolessel/trello-cli.git'
 
   def install
-    system 'PATH="/usr/local/opt/openssl/bin:$PATH" LDFLAGS="-L/usr/local/opt/openssl/lib" CPPFLAGS="-I/usr/local/opt/openssl/include" PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig" make'
+    system 'make'
     bin.install 'bin/trello'
   end
 
